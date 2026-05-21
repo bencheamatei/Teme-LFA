@@ -200,6 +200,12 @@ class grammar:
         self.productions={k:val for (k,val) in self.productions.items() if len(val)>0}
 
     def print_grammar(self):
+        for x in self.non_terminals:
+            print(x, end=" ")
+        print()
+        for x in self.terminals:
+            print(x, end=" ")
+        print()
         print(self.start)
         for x in self.productions:
             print(x, " | ".join(self.productions[x]), sep=" -> ")

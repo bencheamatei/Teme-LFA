@@ -224,6 +224,8 @@ class grammar:
         for j in range(2,n+1):
             for i in range(n):
                 for k in range(1,j):
+                    if i+k>=n:
+                        continue
                     for (care,ys) in self.productions.items():
                         for y in ys:
                             y=self.tokenize(y)

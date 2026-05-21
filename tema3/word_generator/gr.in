@@ -1,4 +1,14 @@
-S
-x y
-S
-S -> xSx | ySy | xx | yy
+Q3_ Q2_ Q1_ Q0_ T Q6_ X Q5_ Q4_ R S 
+b a 
+Q0_
+R -> Q3_X | Q4_Q2_ | Q5_Q1_
+Q3_ -> XR
+S -> Q4_Q2_ | Q5_Q1_
+Q4_ -> a | Q1_T
+Q5_ -> b | Q2_T
+Q1_ -> a
+Q2_ -> b
+T -> Q6_X | a | b
+Q6_ -> a | b | XT
+X -> a | b
+Q0_ -> Q4_Q2_ | Q5_Q1_ | Q3_X

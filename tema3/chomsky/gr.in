@@ -1,7 +1,7 @@
-S A B C
-a b
-S
-S -> AB | aSA | $
-A -> B | C | a
-B -> C | aB | $
-C -> A | b | $
+R X S T 
+a b 
+R 
+R -> XRX | S 
+S -> aTb | bTa
+T -> XTX | X | $ 
+X -> a|b
