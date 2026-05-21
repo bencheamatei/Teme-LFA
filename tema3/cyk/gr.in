@@ -1,0 +1,7 @@
+R X S T 
+a b 
+R 
+R -> XRX | S 
+S -> aTb | bTa
+T -> XTX | X | $ 
+X -> a|b
